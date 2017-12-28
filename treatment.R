@@ -11,7 +11,7 @@ treatment<-function(data)
   vct[pos_vct]<-1
   
   #creation de la matrice finale pour 82 matchs
-  statJ<-matrix(nrow=82,ncol=5)
+  statJ<-matrix(nrow=82,ncol=5,dimnames=list(NULL,c('G','PTS','AST','TRB','VCT')))
   
   #indice du match en 1
   statJ[,1]<-1:82
